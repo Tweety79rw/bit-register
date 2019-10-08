@@ -33,3 +33,15 @@ status.reg = 82;
 status.unused; // would be 12 
 status.sprite_zero_hit; // would be 1
 ```
+This would be similar to:
+```c++
+union {
+  struct {
+    unit8_t unused: 5;
+    unit8_t sprite_overflow: 1;
+    unit8_t sprite_zero_hit: 1;
+    unit8_t vertical_blank: 1;
+  };
+  unit8_t reg;
+} status;
+```
