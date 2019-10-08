@@ -37,11 +37,11 @@ This would be similar to:
 ```c++
 union {
   struct {
-    unit8_t unused: 5;
-    unit8_t sprite_overflow: 1;
-    unit8_t sprite_zero_hit: 1;
-    unit8_t vertical_blank: 1;
+    unit8_t unused: 5; // 5 bits
+    unit8_t sprite_overflow: 1; // 1 bit
+    unit8_t sprite_zero_hit: 1; // 1 bit
+    unit8_t vertical_blank: 1; // 1 bit
   };
-  unit8_t reg;
+  unit8_t reg; // 8 bits
 } status;
 ```
