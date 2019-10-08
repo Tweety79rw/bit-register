@@ -4,6 +4,8 @@ An implementation of c/c++ bit fields in javascript.
 Following [OneLoneCoder](https://github.com/OneLoneCoder)'s nes emulator implementation on youtube [Link](https://www.youtube.com/watch?v=-THeUXqR3zY). I needed to create the registers used in various parts of my JavaScript version of the emulator.
 So I came up with this, the base class basically represents a union of a struct with bit fields and an integer.
 
+[Documentation](https://tweety79rw.github.io/bit-register/)
+
 ## Example Use
 ```JS
 /**
